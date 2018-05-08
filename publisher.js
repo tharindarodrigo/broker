@@ -1,5 +1,5 @@
 var mqtt = require('mqtt');
-var client = mqtt.connect('mqtt://192.168.8.105');
+var client = mqtt.connect('mqtt://192.168.8.100');
 client.on('connect', function () {
     var v = 6;
     setInterval(function () {
@@ -29,6 +29,6 @@ client.on('connect', function () {
         // client.publish('myTopic', x.toString())
         
         
-        console.log('Message Sent ' +v)
-    }, 50);
+        console.log(x1)
+    }, 500);
 });
